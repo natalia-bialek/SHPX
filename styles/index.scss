@@ -1,58 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
-$color-primary: #4B4B4B;
-$color-secondary: #737373;
-$color-beige: #FAF4EF;
-$color-white: #FFFFFF;
-
-* {
-    box-sizing: border-box;
-
-}
-body {
-    background-color: $color-white;
-    color: $color-primary;
-    font-size: 16px;
-}
-
-h1, h2, h3, h4, h5, li {
-    color: $color-primary;
-    // font-family: 'DM Serif Display', sans-serif;
-}
+@import 'global';
+@import 'variables';
+@import 'button';
 
 
-h2, h3, h4, h5 {
-    font-size: 1.875em;
-}
-
-a, button {
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    &:visited {
-        color: $color-primary;
-    }
-}
-
-p {
-    color: $color-secondary;
-    font-family: 'Roboto', monospace;
-    font-weight: 400;
-}
-
-li { 
-    list-style-type: none
-}
-
-section {
-    height: fit-content;
-    min-height: 120vw;
-    padding: 3% 0;
-    overflow: hidden;
-}
+// navigation bar 
 
 nav {
     display: flex;
@@ -118,10 +72,10 @@ nav {
             justify-content: space-around;
 
             button {
-                border: none;
                 background-color: transparent;
                 width: 50px;
                 height: 50px;
+                padding: 10px;
 
                 &:active {
                     background-color: $color-beige;
@@ -344,26 +298,6 @@ nav {
 
 }
 
-.button--primary, .button--secondary {
-    border: none;
-    min-height: 50px;
-    min-width: 175px;
-    max-width: 214px;
-    width: 60%;
-    font-family: 'Roboto', monospace;
-    font-weight: 500;
-}
-
-.button--primary {
-    background-color: $color-primary;
-    color: $color-white;
-}
-
-.button--secondary {
-    background-color: $color-white;
-    color: $color-primary;
-}
-
 
 //tablet 
 
@@ -415,6 +349,7 @@ nav {
 
             .nav__buttons {
                 margin-left: 10px;
+                align-items: center;
             }
         }
     }
@@ -442,13 +377,14 @@ nav {
             max-width: 500px;
             justify-content: space-between;
             margin: 30px auto;
-            font-family: 'Roboto', monospace;
-            font-weight: 500;
+
 
             li {
                 color: #4B4B4B80;
                 cursor: pointer;
                 padding: 2%;
+                font-family: 'Roboto', monospace;
+                font-weight: 500;
 
                 &:first-child {
                     color: $color-primary;
@@ -569,10 +505,6 @@ nav {
         }
     }
 
-
-    .grid__filters {
-        display: flex;
-    }
 
     .grid__container {
         width: 98%;

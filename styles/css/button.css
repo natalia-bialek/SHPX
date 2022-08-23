@@ -1,0 +1,22 @@
+.button--primary, .button--secondary {
+  min-height: 50px;
+  min-width: 175px;
+  max-width: 214px;
+  width: 60%;
+  font-family: "Roboto", monospace;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.button--primary {
+  background-color: #4B4B4B;
+  color: #FFFFFF;
+  transition: box-shadow 5ms ease-out;
+}
+
+.button--secondary {
+  background-color: #FFFFFF;
+  color: #4B4B4B;
+}
+
+/*# sourceMappingURL=button.css.map */
