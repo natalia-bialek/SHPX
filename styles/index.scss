@@ -25,8 +25,9 @@ nav {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+        color: $color-primary;
 
-        &:visited {
+        &:visited, &:active {
             color: $color-primary;
         }
     }

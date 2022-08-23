@@ -99,8 +99,9 @@ nav .nav__logo {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  color: #4B4B4B;
 }
-nav .nav__logo:visited {
+nav .nav__logo:visited, nav .nav__logo:active {
   color: #4B4B4B;
 }
 nav .nav__links {
