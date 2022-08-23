@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
+@import 'normalize';
 @import 'global';
 @import 'variables';
 @import 'button';
@@ -586,6 +587,10 @@ nav {
 
         .grid__product {
             height: 420px;
+
+            .grid__image {
+                bottom: -40px;
+            }
         }
     }
 
